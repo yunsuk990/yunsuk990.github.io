@@ -1,16 +1,18 @@
 name: "Build and Deploy"
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths-ignore:
-      - .gitignore
-      - README.md
-      - LICENSE
-  
   repository_dispatch:
     types: [RUN_WORKFLOW_DISPATCH]
+    
+  # push:
+  #   branches:
+  #     - main
+  #     - master
+  #   paths-ignore:
+  #     - .gitignore
+  #     - README.md
+  #     - LICENSE
+  
+
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -66,6 +68,7 @@ jobs:
 
 
   build:
+    needs: importer
     runs-on: ubuntu-latest
 
     steps:
