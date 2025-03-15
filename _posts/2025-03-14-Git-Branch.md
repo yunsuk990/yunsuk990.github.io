@@ -13,11 +13,7 @@ categories: [Development, Git, ]
 ---
 
 
-[bookmark](https://backlog.com/ja/git-tutorial/stepup/01/)
-
-
-[bookmark](https://yozm.wishket.com/magazine/detail/2827/)
-
+[BackLog_Git](https://backlog.com/ja/git-tutorial/stepup/01/)
 
 
 #### <u>브랜치 생성</u>
