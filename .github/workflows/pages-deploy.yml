@@ -3,14 +3,14 @@ on:
   repository_dispatch:
     types: [RUN_WORKFLOW_DISPATCH]
     
-  # push:
-  #   branches:
-  #     - main
-  #     - master
-  #   paths-ignore:
-  #     - .gitignore
-  #     - README.md
-  #     - LICENSE
+  push:
+    branches:
+      - main
+      - master
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
   
 
 
@@ -116,4 +116,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v3
