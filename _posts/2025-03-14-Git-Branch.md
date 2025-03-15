@@ -13,12 +13,6 @@ categories: [Development, Git, ]
 ---
 
 
-[bookmark](https://backlog.com/ja/git-tutorial/stepup/01/)
-
-
-[bookmark](https://yozm.wishket.com/magazine/detail/2827/)
-
-
 소프트웨어를 개발할 때 하나의 소프트웨어에 대해 여러 멤버가 동시에 기능 추가를 하거나 버그 수정을 하는 등의 경우가 있습니다. 또, 복수의 릴리스 버젼이 존재하는 상태로, 각각을 보수해야 한다고 하는 일도 있습니다.
 
 
@@ -57,8 +51,8 @@ issue1이라는 브랜치를 만듭니다.
 
 {% raw %}
 ```shell
-git branch // 분기 목록 확인
-git branch [branchname] // 브랜치 생성
+$ git branch // 분기 목록 확인
+$ git branch [branchname] // 브랜치 생성
 ```
 {% endraw %}
 
@@ -77,8 +71,8 @@ git branch [branchname] // 브랜치 생성
 
 
 {% raw %}
-```kotlin
-git checkout [옵션][branch] // 해당 브랜치로 전환
+```shell
+$ git checkout [option][branch] // 해당 브랜치로 전환
 							-b: //브랜치를 생성하고 전환
 ```
 {% endraw %}
@@ -119,8 +113,8 @@ issue1 브랜치에 변경한 내용을 master 브랜치에 통합합니다.
 
 
 {% raw %}
-```kotlin
-git merge [branchname]  // 지정된 브랜치와 병합
+```shell
+$ git merge [branchname]  // 지정된 브랜치와 병합
 ```
 {% endraw %}
 
@@ -160,8 +154,8 @@ issue1 브랜츼 내용이 master에 통합되었으므로 삭제합니다.
 
 
 {% raw %}
-```kotlin
-git branch -d [branchname]  //브랜치 삭제
+```shell
+$ git branch -d [branchname]  //브랜치 삭제
 ```
 {% endraw %}
 
@@ -294,3 +288,9 @@ git reset --hard HEAD~ // 원하는 분기로 이동
 
 - **`git checkout master`**
 - **`git merge issue3`**
+
+[bookmark](https://backlog.com/ja/git-tutorial/stepup/01/)
+
+
+[bookmark](https://yozm.wishket.com/magazine/detail/2827/)
+
