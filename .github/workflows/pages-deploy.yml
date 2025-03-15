@@ -66,6 +66,9 @@ jobs:
           commit_user_email: actions@github.com
           commit_author: importer-bot 🤖 <actions@github.com>
 
+      - name: Force Push Changes
+        run: git push origin master
+
 
   build:
     needs: importer
@@ -75,10 +78,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: master
           fetch-depth: 0
           # submodules: true
           # If using the 'assets' git submodule from Chirpy Starter, uncomment above
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
+          
+      - name: Pull Latest Changes
+        run: git pull origin master
 
       - name: Setup Pages
         id: pages
