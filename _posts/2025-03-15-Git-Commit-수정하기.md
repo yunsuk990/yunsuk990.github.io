@@ -27,13 +27,13 @@ git commit --amend
 - 이전에 Commit된 새 파일을 나중에 추가
 - 마지막 Commit 내용 수정
 
-[object Promise]
+![0](/assets/img/2025-03-15-Git-Commit-수정하기.md/0.png)
 
 - sample.txt 수정
 - `git add sample.txt`
 - `git commit --amend`
 
-[object Promise]
+![1](/assets/img/2025-03-15-Git-Commit-수정하기.md/1.png)
 
 
 
@@ -47,7 +47,7 @@ git commit --amend
 
 - 과거에 공개한 commit을 안전하게 상쇄
 
-[object Promise]
+![2](/assets/img/2025-03-15-Git-Commit-수정하기.md/2.png)
 
 
 
@@ -61,7 +61,7 @@ $ git revert HEAD
 
 
 
-[object Promise]
+![3](/assets/img/2025-03-15-Git-Commit-수정하기.md/3.png)
 
 
 
@@ -84,7 +84,7 @@ undefined
 - 최근의 commit을 완전히 버리기 (hard)
 - commit만  버리기 (soft)
 
-[object Promise]
+![4](/assets/img/2025-03-15-Git-Commit-수정하기.md/4.png)
 
 
 reset을 사용하여 commit을 삭제합니다.
@@ -99,5 +99,5 @@ $ git reset --hard HEAD~~
 
 
 
-[object Promise]
+![5](/assets/img/2025-03-15-Git-Commit-수정하기.md/5.png)
 

@@ -26,7 +26,7 @@ categories: [Development, Git, ]
 브랜치란 독립적으로 어떤 작업을 진행하기 위한 개념입니다. 필요에 의해 만들어지는 각각의 브랜치는 다른 브랜치의 영향을 받지 않기 때문에, 여러 작업을 동시에 진행할 수 있습니다.
 
 
-[object Promise]
+![0](/assets/img/2025-03-14-Git-Branch.md/0.png)
 
 
 또, 브랜치를 다른 브랜치와 병합함으로써, 작업한 내용을 다시 새로운 하나의 브랜치로 정리할 수 있습니다.
@@ -35,7 +35,7 @@ categories: [Development, Git, ]
 여러 명이서 동시에 작업을 할 때에 다른 사람의 작업에 영향을 주거나 받지 않도록, 먼저 메인 브랜치에서 자신의 작업 전용 브랜치를 만듭니다. 그리고 작업이 끝난 멤버는, 메인의 브랜치에 자신의 브랜치의 변경 사항을 적용합니다. 이렇게 하면 다른 멤버의 작업에 영향을 받지 않고 자신의 작업을 진행할 수 있습니다. 또한 작업 단위로 이력을 남기면 문제가 발생한 경우에 원인이 되는 작업을 찾아내거나 그에 따른 대책을 세우기 쉬워집니다.
 
 
-[object Promise]
+![1](/assets/img/2025-03-14-Git-Branch.md/1.png)
 
 
 
@@ -45,7 +45,7 @@ categories: [Development, Git, ]
 issue1이라는 브랜치를 만듭니다.
 
 
-[object Promise]
+![2](/assets/img/2025-03-14-Git-Branch.md/2.png)
 
 
 
@@ -66,7 +66,7 @@ $ git branch [branchname] // 브랜치 생성
 새로 만든 issue1 브랜치에 commit을 추가하려면, 해당 브랜치로 이동해야합니다.
 
 
-[object Promise]
+![3](/assets/img/2025-03-14-Git-Branch.md/3.png)
 
 
 
@@ -82,7 +82,7 @@ $ git checkout [option][branch] // 해당 브랜치로 전환
 - **`git  add myfile.txt`**
 - **`git commit -m “add 설명 추가”`**
 
-[object Promise]
+![4](/assets/img/2025-03-14-Git-Branch.md/4.png)
 
 
 
@@ -108,7 +108,7 @@ $ git checkout [option][branch] // 해당 브랜치로 전환
 issue1 브랜치에 변경한 내용을 master 브랜치에 통합합니다.
 
 
-[object Promise]
+![5](/assets/img/2025-03-14-Git-Branch.md/5.png)
 
 
 
@@ -123,7 +123,7 @@ $ git merge [branchname]  // 지정된 브랜치와 병합
 브랜치를 HEAD가 가리키는 브랜치로 병합합니다. 
 
 
-[object Promise]
+![6](/assets/img/2025-03-14-Git-Branch.md/6.png)
 
 - **`git checkout master`**
 - **`git merge issue1`**
@@ -131,7 +131,7 @@ $ git merge [branchname]  // 지정된 브랜치와 병합
 master 브랜치가 가리키는 commit이 issue1과 같은 위치를 이동했습니다. 이 병합은 fast-forward (빨리감기) 병합입니다.
 
 
-[object Promise]
+![7](/assets/img/2025-03-14-Git-Branch.md/7.png)
 
 - **`git checkout master`**
 - **`git merge issue1`**
@@ -146,10 +146,10 @@ undefined
 issue1 브랜츼 내용이 master에 통합되었으므로 삭제합니다.
 
 
-[object Promise]
+![8](/assets/img/2025-03-14-Git-Branch.md/8.png)
 
 
-[object Promise]
+![9](/assets/img/2025-03-14-Git-Branch.md/9.png)
 
 
 
@@ -169,28 +169,28 @@ $ git branch -d [branchname]  //브랜치 삭제
 두 개의 분기 (브랜치)를 만들고 병렬로 작업해봅니다.
 
 
-[object Promise]
+![10](/assets/img/2025-03-14-Git-Branch.md/10.png)
 
 
-[object Promise]
+![11](/assets/img/2025-03-14-Git-Branch.md/11.png)
 
 - **`git branch issue2`**
 - **`git branch issue3`**
 - **`git checkout issue2`**
 
-[object Promise]
+![12](/assets/img/2025-03-14-Git-Branch.md/12.png)
 
 
-[object Promise]
+![13](/assets/img/2025-03-14-Git-Branch.md/13.png)
 
 - myfile.txt 수정
 - **`git add myfile.txt`**
 - **`git commit -m “commit 설명 추가”`**
 
-[object Promise]
+![14](/assets/img/2025-03-14-Git-Branch.md/14.png)
 
 
-[object Promise]
+![15](/assets/img/2025-03-14-Git-Branch.md/15.png)
 
 - **`git checkout issue3`**
 - myfile.txt 수정
@@ -209,10 +209,10 @@ $ git branch -d [branchname]  //브랜치 삭제
 #### merge로 병합하기
 
 
-[object Promise]
+![16](/assets/img/2025-03-14-Git-Branch.md/16.png)
 
 
-[object Promise]
+![17](/assets/img/2025-03-14-Git-Branch.md/17.png)
 
 - **`git checkout master`**
 - **`git merge issue2`**
@@ -242,10 +242,10 @@ pull 설명 추가
 
 - 충돌 부분을 수정하여 다시 commit
 
-[object Promise]
+![18](/assets/img/2025-03-14-Git-Branch.md/18.png)
 
 
-[object Promise]
+![19](/assets/img/2025-03-14-Git-Branch.md/19.png)
 
 - **`git add myfile.txt`**
 - **`git commit -m "issue3 브랜치 병합"`**
@@ -254,10 +254,10 @@ pull 설명 추가
 #### rebase로 병합하기
 
 
-[object Promise]
+![20](/assets/img/2025-03-14-Git-Branch.md/20.png)
 
 
-[object Promise]
+![21](/assets/img/2025-03-14-Git-Branch.md/21.png)
 
 
 
@@ -270,10 +270,10 @@ git reset --hard HEAD~ // 원하는 분기로 이동
 
 - HEAD~ :
 
-[object Promise]
+![22](/assets/img/2025-03-14-Git-Branch.md/22.png)
 
 
-[object Promise]
+![23](/assets/img/2025-03-14-Git-Branch.md/23.png)
 
 - **`git checkout issue3`**
 - **`git rebase master`**
@@ -281,10 +281,10 @@ git reset --hard HEAD~ // 원하는 분기로 이동
 - **`git add myfile.txt`**
 - **`git rebase —continue`**
 
-[object Promise]
+![24](/assets/img/2025-03-14-Git-Branch.md/24.png)
 
 
-[object Promise]
+![25](/assets/img/2025-03-14-Git-Branch.md/25.png)
 
 - **`git checkout master`**
 - **`git merge issue3`**
